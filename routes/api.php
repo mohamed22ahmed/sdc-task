@@ -17,3 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::apiResources(['form_test' => 'API\FormController']);
+Route::post('form_test_update', 'API\FormController@update_form_test');

@@ -11,7 +11,7 @@ class User extends Authenticatable
     use Notifiable;
 
     protected $fillable = [
-        'name', 'email', 'brand_name','cr'
+        'name','name_ar', 'email', 'brand_name', 'brand_name_ar','cr'
     ];
 
     protected $casts = [
