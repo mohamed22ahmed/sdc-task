@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('brand_name');
             $table->string('brand_name_ar')->nullable();
             $table->string('cr')->nullable();
+            $table->boolean('admin_sent')->default(0);
             $table->timestamps();
         });
     }
