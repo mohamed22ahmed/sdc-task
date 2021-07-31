@@ -28,6 +28,7 @@ class Confirm_user extends Mailable
      */
     public function build()
     {
+        // email that will send to user
         return $this->view('confirm_user');
     }
 }
